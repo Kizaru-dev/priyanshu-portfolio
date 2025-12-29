@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-nord-dark text-nord-text font-sans antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-nord-dark;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-nord-surface rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-nord-highlight;
+}
